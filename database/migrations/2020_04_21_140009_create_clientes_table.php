@@ -27,8 +27,6 @@ class CreateClientesTable extends Migration
             $table->string('estado');
             $table->string('email');
             $table->timestamps();
-            $table->charset('utf8');
-            $table->collation('utf8_unicode_ci');
         });
     }
 
