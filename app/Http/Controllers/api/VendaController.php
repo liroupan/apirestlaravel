@@ -4,22 +4,29 @@ namespace App\Http\Controllers\api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Cliente;
+use App\Models\Venda;
 
-class ClienteController extends Controller
+class VendaController extends Controller
 {
 
     public function index()
     {
-        return Cliente::all();
+        return Venda::all();
     }
+
 
     public function store(Request $request)
     {
-        Cliente::create($request->all());
+        Venda::create($request->all());
     }
 
+
     public function show($id)
+    {
+        //
+    }
+
+    public function edit($id)
     {
         //
     }
