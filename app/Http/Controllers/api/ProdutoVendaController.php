@@ -20,7 +20,7 @@ class ProdutoVendaController extends Controller
 
     public function show($id)
     {
-        //
+        ProdutoVenda::findOrFail($id);
     }
 
     public function edit($id)

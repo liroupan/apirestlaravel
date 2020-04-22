@@ -23,7 +23,7 @@ class VendaController extends Controller
 
     public function show($id)
     {
-        //
+        Venda::findOrFail($id);
     }
 
     public function edit($id)

@@ -21,7 +21,7 @@ class ClienteController extends Controller
 
     public function show($id)
     {
-        //
+        Cliente::findOrFail();
     }
 
     public function update(Request $request, $id)
